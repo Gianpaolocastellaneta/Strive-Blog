@@ -1,0 +1,49 @@
+@baseUrl= http://localhost:5000/blogPosts
+
+
+###
+
+GET {{baseUrl}}
+
+###
+
+GET {{baseUrl}}/66c8b6796dd563432970be8e
+
+###
+
+POST {{baseUrl}}
+Content-Type: application/json
+ 
+{
+    "category": "prova mail2",
+    "title": "prova mail 2",
+    "cover": "cover img",
+    "readTime": {
+        "value": 2,
+        "unit": "min"
+    },
+    "author": "ilop2@gmail.com",
+    "content": "1414141414"
+} 
+
+###
+
+PUT {{baseUrl}}/66c8b6b36dd563432970be93
+Content-Type: application/json
+
+{
+    "category": "0987",
+    "title": "09",
+    "cover": "url della cover",
+    "readTime": {
+        "value": 2,
+        "unit": "min"
+    },
+    "author": "ilop",
+    "content": "0987654321"
+} 
+
+
+###
+
+DELETE {{baseUrl}}/66be004854862603acafd837

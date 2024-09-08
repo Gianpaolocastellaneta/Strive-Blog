@@ -1,0 +1,26 @@
+@baseUrl= http://localhost:5000/auth
+
+POST {{baseUrl}}/register
+Content-Type: application/json
+ 
+{
+    "name": "Gianpaolo",
+      "surname": "Castellaneta",
+      "email": "gianpaolo@castellaneta.com",
+      "avatar": "",
+      "password":"1234512345"
+} 
+
+###
+POST {{baseUrl}}/login
+Content-Type: application/json
+ 
+{
+      "email": "gianpaolo@castellaneta.com",
+      "password":"gianpaolo"
+} 
+
+###
+
+GET {{baseUrl}}/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTc4NzU1MiwiZXhwIjoxNzI1NzkxMTUyfQ.rUtK7KmC_m2_2FlaHT5NxJQiSyCbR4grYobXKZfgPBM

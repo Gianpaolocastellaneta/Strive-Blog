@@ -1,0 +1,37 @@
+@baseUrl= http://localhost:5000/blogPosts
+
+
+###
+
+GET {{baseUrl}}/66dc304a9217de4380488385/comments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTc4NzU1MiwiZXhwIjoxNzI1NzkxMTUyfQ.rUtK7KmC_m2_2FlaHT5NxJQiSyCbR4grYobXKZfgPBM
+
+###
+
+GET {{baseUrl}}/66c8c1c0856cf79eb9c216a6/comments/66dd6e8b990613d7695b53d8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTc4NzU1MiwiZXhwIjoxNzI1NzkxMTUyfQ.rUtK7KmC_m2_2FlaHT5NxJQiSyCbR4grYobXKZfgPBM
+
+###
+
+POST {{baseUrl}}/66dc304a9217de4380488385/comments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTc4NzU1MiwiZXhwIjoxNzI1NzkxMTUyfQ.rUtK7KmC_m2_2FlaHT5NxJQiSyCbR4grYobXKZfgPBM
+Content-Type: application/json
+ 
+{
+    "content": "commento 1"
+} 
+
+###
+
+PUT {{baseUrl}}/66dc304a9217de4380488385/comments/66dd6e8b990613d7695b53d8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTc4NzU1MiwiZXhwIjoxNzI1NzkxMTUyfQ.rUtK7KmC_m2_2FlaHT5NxJQiSyCbR4grYobXKZfgPBM
+Content-Type: application/json
+ 
+{
+    "content": "commento 1 modificato"
+} 
+
+###
+
+DELETE {{baseUrl}}/66c8c1c0856cf79eb9c216a6/comment/66cf699770050a5e7aa2156b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTc4NzU1MiwiZXhwIjoxNzI1NzkxMTUyfQ.rUtK7KmC_m2_2FlaHT5NxJQiSyCbR4grYobXKZfgPBM
