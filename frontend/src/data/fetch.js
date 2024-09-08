@@ -16,11 +16,14 @@ export const loadPosts = async (search) =>{
 
 export const loadSinglePost = async (paramsId) =>{
     console.log(paramsId)
-    const res = await fetch (`${process.env.REACT_APP_API_URL}/${paramsId}`, {
+    const res = await fetch (`${process.env.REACT_APP_API_URL}/blogPosts/${paramsId}`, {
+        
+
         headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
         }
     })
+
     const data = await res.json();
     return data
 }
