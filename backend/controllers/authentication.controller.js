@@ -54,5 +54,5 @@ export const me = async(req,res) =>{
 
 export const callBackGoogle = async (req, res) =>{
     //qui facciamo il redirect al front end passandogli il jwt creato in passport nella query string
-    res.redirect(`http://localhost:3000?token=${req.user.jwtToken}`) // token aggiunto da passport, user è l'oggetto di passport
+    res.redirect(`${process.env.FRONTEND_URL}?token=${req.user.jwtToken}`) // token aggiunto da passport, user è l'oggetto di passport
 }
