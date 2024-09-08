@@ -8,7 +8,7 @@ const googleStrategy = new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret:process.env.GOOGLE_CLIENT_SECRET,
     // callbackUrl:`${process.env.HOST}:${process.env.PORT}${process.env.GOOGLE_CALLBACK}`
-    callbackURL:process.env.GOOGLE_CALLBACK
+    callbackURL:`${process.env.HOST}:${process.env.PORT}${process.env.GOOGLE_CALLBACK}`
   },
 
 async function(accessToken, refreshToken, profile, passportNext) {//i primi due non ci servono, il profile ci serve e poi passportNext lo chiamiamo noi così, sarebbe la callback
