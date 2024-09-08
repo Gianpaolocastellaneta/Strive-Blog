@@ -12,7 +12,7 @@ import passport from 'passport';
 import GoogleStrategy from './config/passport.config.js';
 import authorization from './middleware/authorization.js';
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 
 //creo il server
