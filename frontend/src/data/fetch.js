@@ -1,13 +1,8 @@
-// export const loadAuthors = async () =>{
-//     const res = await fetch ('http://localhost:5000/authors')
-//     const data = await res.json();
-//     return data
-// }
 import { useNavigate } from "react-router-dom";
 
 
 export const loadPosts = async (search) =>{
-    const urlBase = 'http://localhost:5000/blogPosts'
+    const urlBase = `${process.env.REACT_APP_API_URL}/blogPosts`
     const urlSearch= search && `?title=${search}`
     const res = await fetch (urlBase + urlSearch,{
         headers: {
@@ -21,7 +16,7 @@ export const loadPosts = async (search) =>{
 
 export const loadSinglePost = async (paramsId) =>{
     console.log(paramsId)
-    const res = await fetch (`http://localhost:5000/blogPosts/${paramsId}`, {
+    const res = await fetch (`${process.env.REACT_APP_API_URL}/${paramsId}`, {
         headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
         }
@@ -38,7 +33,7 @@ export const newPost = async (formValue,cover) =>{
     formData.append('readTime', JSON.stringify(formValue.readTime))
     formData.append('author', formValue.author)
     formData.append('content', formValue.content)
-    const res= await fetch ('http://localhost:5000/blogPosts', {
+    const res= await fetch (`${process.env.REACT_APP_API_URL}/blogPosts`, {
         headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
         },        
@@ -52,7 +47,7 @@ export const newPost = async (formValue,cover) =>{
 
 export const login = async (formValue) => {
     try {
-        const res = await fetch('http://localhost:5000/auth/login', {
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/auth/login`, {
             headers: {
                 "Content-Type": "application/json",
             },
@@ -73,7 +68,7 @@ export const login = async (formValue) => {
 
 
 export const me = async() =>{
-    const res = await fetch('http://localhost:5000/auth/me',{
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/auth/me`,{
         headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
         }
@@ -95,7 +90,7 @@ export const register = async (regFormValue, avatar) => {
     formData.append('password', regFormValue.password)
     console.log(formData)
     try {
-        const res = await fetch('http://localhost:5000/auth/register', {
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/auth/register`, {
             // headers: {
             //     "Content-Type": "application/json"
             // },
@@ -112,7 +107,7 @@ export const register = async (regFormValue, avatar) => {
 
 
 export const loadComments = async (id) =>{
-    const res = await fetch (`http://localhost:5000/blogPosts/${id}/comments`,{
+    const res = await fetch (`${process.env.REACT_APP_API_URL}/blogPosts/${id}/comments`,{
         headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
         }
@@ -123,7 +118,7 @@ export const loadComments = async (id) =>{
 
 export const newComment = async (id, formValue) =>{
  
-    const res= await fetch (`http://localhost:5000/blogPosts/${id}/comments`, {
+    const res= await fetch (`${process.env.REACT_APP_API_URL}/blogPosts/${id}/comments`, {
         headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`,
             "Content-Type": "application/json"
@@ -138,7 +133,7 @@ export const newComment = async (id, formValue) =>{
 // ../../data/fetch.js
 
 export const editComment = async (commentId, updatedContent) => {
-    const res = await fetch(`http://localhost:5000/comments/${commentId}`, {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/comments/${commentId}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -155,7 +150,7 @@ export const editComment = async (commentId, updatedContent) => {
 };
 
 export const deleteComment = async (commentId) => {
-    const res = await fetch(`http://localhost:5000/comments/${commentId}`, {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/comments/${commentId}`, {
         method: "DELETE",
         headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
@@ -171,7 +166,7 @@ export const deleteComment = async (commentId) => {
 
 export const deletePost = async (postId) =>{
     try {
-        const res = await fetch(`http://localhost:5000/blogPosts/${postId}`, {
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/blogPosts/${postId}`, {
             headers: {
                 "Authorization": `Bearer ${localStorage.getItem('token')}`,
                 "Content-Type": "application/json"
