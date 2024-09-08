@@ -7,7 +7,6 @@ import "dotenv/config";
 const googleStrategy = new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret:process.env.GOOGLE_CLIENT_SECRET,
-    // callbackUrl:`${process.env.HOST}:${process.env.PORT}${process.env.GOOGLE_CALLBACK}`
     callbackURL:`${process.env.HOST}:${process.env.PORT}${process.env.GOOGLE_CALLBACK}`
   },
 
