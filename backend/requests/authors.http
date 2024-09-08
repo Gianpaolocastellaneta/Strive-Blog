@@ -1,12 +1,12 @@
 @baseUrl= http://localhost:5000/authors
 
 GET {{baseUrl}}
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTc4NzU1MiwiZXhwIjoxNzI1NzkxMTUyfQ.rUtK7KmC_m2_2FlaHT5NxJQiSyCbR4grYobXKZfgPBM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTgxNDc0NiwiZXhwIjoxNzI1ODE4MzQ2fQ.3VcPEE6jzq2HHYdVpvk_DVuQFWPTWGLe9c1rZlAsl14
 
 ###
 
-GET {{baseUrl}}/66c081c65a89916dbdae8b70
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZDJmYThlMmUxMzJlNWExNWI4Y2I4OCIsImlhdCI6MTcyNTU1NDY1MCwiZXhwIjoxNzI1NTU4MjUwfQ.Grwaj4q-x7Yb4rAqHTWJBFcR4DNUzqTC-5iUeycMqis
+GET {{baseUrl}}/66dc304a9217de4380488385
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTgxNDc0NiwiZXhwIjoxNzI1ODE4MzQ2fQ.3VcPEE6jzq2HHYdVpvk_DVuQFWPTWGLe9c1rZlAsl14
 
 
 ###
@@ -16,7 +16,7 @@ GET {{baseUrl}}/?perPage=4
 ###
 
 POST {{baseUrl}}
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZDJmYThlMmUxMzJlNWExNWI4Y2I4OCIsImlhdCI6MTcyNTU1NDY1MCwiZXhwIjoxNzI1NTU4MjUwfQ.Grwaj4q-x7Yb4rAqHTWJBFcR4DNUzqTC-5iUeycMqis
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTgxNDc0NiwiZXhwIjoxNzI1ODE4MzQ2fQ.3VcPEE6jzq2HHYdVpvk_DVuQFWPTWGLe9c1rZlAsl14
 Content-Type: application/json
  
 {
@@ -30,7 +30,7 @@ Content-Type: application/json
 ###
 
 PUT {{baseUrl}}/66c1c346d5ecf93bca6c2ec9
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZDJmYThlMmUxMzJlNWExNWI4Y2I4OCIsImlhdCI6MTcyNTU1NDY1MCwiZXhwIjoxNzI1NTU4MjUwfQ.Grwaj4q-x7Yb4rAqHTWJBFcR4DNUzqTC-5iUeycMqis
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTgxNDc0NiwiZXhwIjoxNzI1ODE4MzQ2fQ.3VcPEE6jzq2HHYdVpvk_DVuQFWPTWGLe9c1rZlAsl14
 Content-Type: application/json
 
 {
@@ -44,7 +44,7 @@ Content-Type: application/json
 ###
 
 DELETE {{baseUrl}}/66c081fb5a89916dbdae8b74
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZDJmYThlMmUxMzJlNWExNWI4Y2I4OCIsImlhdCI6MTcyNTU1NDY1MCwiZXhwIjoxNzI1NTU4MjUwfQ.Grwaj4q-x7Yb4rAqHTWJBFcR4DNUzqTC-5iUeycMqis
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjY2ZGMzMDRhOTIxN2RlNDM4MDQ4ODM4NSIsImlhdCI6MTcyNTgxNDc0NiwiZXhwIjoxNzI1ODE4MzQ2fQ.3VcPEE6jzq2HHYdVpvk_DVuQFWPTWGLe9c1rZlAsl14
 
 ###
 
