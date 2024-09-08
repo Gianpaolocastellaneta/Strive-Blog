@@ -24,7 +24,7 @@ const BlogList = () => {
             <Form.Control
               type="search"
               placeholder="Search..."
-              className="mx-5 mb-5 w-100 bg-light text-light"
+              className="mx-5 mb-5 w-100 bg-light text-dark"
               aria-label="Search"
               name="search"
             onChange={handleSearch}
