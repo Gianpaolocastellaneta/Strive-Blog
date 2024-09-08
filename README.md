@@ -32,7 +32,12 @@ Questo progetto è un'applicazione web full-stack per un blog, sviluppata utiliz
 
 ### Configurazione e Avvio
 - **frontend**: cd frontend && npm run dev
-- **backend**: cd backend && node server.js
+- **backend**: cd backend && npm start
+
+### Deploy
+- **frontend**: Vercel
+- **backend**: Render
+https://strive-blog-sigma.vercel.app/
 
 ### Test
 - Email test : gianpaolo@castellaneta.com
