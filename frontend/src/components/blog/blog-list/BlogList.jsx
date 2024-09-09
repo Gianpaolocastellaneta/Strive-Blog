@@ -62,14 +62,14 @@ const BlogList = () => {
         </Col>
       ))}
     </Row>
-    <div className="d-flex justify-content-end align-items-center">
-        <Button className="me-2" onClick={goToPreviousPage} disabled={currentPage === 1}>
+    <div className="d-flex justify-content-center mt-5">
+        <Button variant="dark" className="me-2" onClick={goToPreviousPage} disabled={currentPage === 1}>
           Previous
         </Button>
         <span>
           Page {currentPage} of {totalPages}
         </span>
-        <Button className="ms-2" onClick={goToNextPage} disabled={currentPage === totalPages}>
+        <Button variant="dark" className="ms-2" onClick={goToNextPage} disabled={currentPage === totalPages}>
           Next
         </Button>
       </div>
