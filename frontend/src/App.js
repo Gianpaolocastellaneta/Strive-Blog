@@ -13,9 +13,6 @@ import NotFound from "./pages/NotFound";
 
 
 function App() {
-  // useEffect(()=> {
-  //   loadAuthors().then((data => console.log(data)))
-  // },[])
   useEffect(()=> {
     loadPosts().then((data => console.log(data)))
   },[])
@@ -30,9 +27,6 @@ function App() {
         <Route path="/new" element={<NewBlogPost />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="/*" element={<Navigate to="/404" />}/>
-        {/* <Route path="/blogPosts/:id" element={<SingleBlogPost />} /> */}
-        {  /* <Route path="/authors" element={<AuthorList />} /> da creare */}
-        {  /* <Route path="/authors/:id" element={<SingleAuthor />} /> da creare */}
       </Routes>
       <Footer />
     </Router>

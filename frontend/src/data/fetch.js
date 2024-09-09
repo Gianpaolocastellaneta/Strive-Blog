@@ -1,6 +1,3 @@
-import { useNavigate } from "react-router-dom";
-
-
 export const loadPosts = async (search) =>{
     const urlBase = `${process.env.REACT_APP_API_URL}/blogPosts`
     const urlSearch= search && `?title=${search}`
@@ -94,9 +91,6 @@ export const register = async (regFormValue, avatar) => {
     console.log(formData)
     try {
         const res = await fetch(`${process.env.REACT_APP_API_URL}/auth/register`, {
-            // headers: {
-            //     "Content-Type": "application/json"
-            // },
             method: 'POST',
             body:formData
         })
@@ -186,3 +180,4 @@ export const deletePost = async (postId) =>{
         console.error(`Errore durante l'eliminazione del post: ${error.message}`);
     }
 }
+
